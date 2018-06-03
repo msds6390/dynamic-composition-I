@@ -1,11 +1,13 @@
-/* MSDS 6390 Assignment 3: Dynamic Composition 1
- Re-creation of Anthony Howe's Di-Octo kinetic sculpture
- Team: Brian Yu, Jostein Barry-Straume 
- Date: 06/02/18
- Sources: https://www.howeart.net/shindahiku-fern-pull
-          https://processing.org/discourse/beta/num_1221179611.html
-          https://www.openprocessing.org/sketch/346369
-          https://youtu.be/1CNU3DQclGs?t=2m40s
+/*
+  MSDS 6390 Assignment 3: Dynamic Composition 1
+  Re-creation of Anthony Howe's Di-Octo kinetic sculpture
+  Team: Brian Yu, Jostein Barry-Straume 
+  Date: 06/02/18
+  Sources:
+    https://www.howeart.net/shindahiku-fern-pull
+    https://processing.org/discourse/beta/num_1221179611.html
+    https://www.openprocessing.org/sketch/346369
+    https://youtu.be/1CNU3DQclGs?t=2m40s
 */
 PImage octoTexture;
 PImage oceanFloor;
