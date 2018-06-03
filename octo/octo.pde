@@ -38,14 +38,28 @@ void draw() {
    
   // Draw the body of the octopus
   pushMatrix();
-  translate(width/2, height/2);
+  translate(r % width, height/2);
   sphereDetail(15);
   shape(octoBody);
   popMatrix();
   
+  // Code for head
+  // Can't get it to rotate properly
+  //pushMatrix();
+  //translate(width/2, height/2);
+  //translate(-200 + r, 0);
+  //shape(octoHead);
+  //popMatrix();
+  
+  //pushMatrix();
+  //translate(width/2, height/2);
+  //translate(r, 0);
+  //shape(octoHead);
+  //popMatrix();
+  
   // Center the subsequent drawings
   // of the arms and head
-  translate(width/2, height/2, 0);
+  translate(r % width, height/2, 0);
 
 
   rotateX(cos(millis()/10000.0));
@@ -65,11 +79,12 @@ void draw() {
     popMatrix();
   }
   theta += 0.01;
-  if (r > 200) {
-    r = 0;
-  } else {
-    r += 1;
-  }
+  r += 1;
+  //if (r > 200) {
+  //  r = 0;
+  //} else {
+  //  r += 1;
+  //}
 }
 
 void arm(int s) {
